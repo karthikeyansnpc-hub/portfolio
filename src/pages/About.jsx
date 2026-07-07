@@ -47,7 +47,7 @@ function About() {
 
           <div>
             <h3>Email</h3>
-            <p>karthikeyan.snpc@email.com</p>
+            <p>karthikeyan.snpc@gmail.com</p>
           </div>
 
           <div>
