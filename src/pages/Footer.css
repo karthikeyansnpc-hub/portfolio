@@ -1,0 +1,245 @@
+
+.footer{
+
+    background:white;
+
+    color:black;
+
+    min-height:350px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+
+/* MAIN CONTENT */
+
+.footer-wrapper{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+/* NAME LOGO */
+
+.footer-about h1{
+
+    font-size:70px;
+
+    font-weight:900;
+
+    letter-spacing:8px;
+
+    color:black;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* TITLE */
+
+.footer-about h3{
+
+    font-size:28px;
+
+    color:black;
+
+    letter-spacing:3px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* DESCRIPTION */
+
+.footer-about p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    font-size:22px;
+
+    line-height:35px;
+
+    color:#333;
+
+}
+
+
+
+/* SOCIAL ICONS */
+
+.footer-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    margin-top:45px;
+
+}
+
+
+
+.footer-icons a{
+
+    width:75px;
+
+    height:75px;
+
+    background:black;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:35px;
+
+    text-decoration:none;
+
+    transition:.5s;
+
+}
+
+
+
+.footer-icons a:hover{
+
+    transform:translateY(-10px) rotate(360deg);
+
+}
+
+
+
+/* GITHUB */
+
+.footer-icons a:nth-child(1):hover{
+
+    background:#181717;
+    font-size: 75px;
+
+}
+
+
+
+/* LINKEDIN */
+
+.footer-icons a:nth-child(2):hover{
+
+    background:#0A66C2;
+
+}
+
+
+
+/* INSTAGRAM */
+
+.footer-icons a:nth-child(3):hover{
+
+    background:linear-gradient(
+        45deg,
+        #feda75,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+
+}
+
+
+
+/* COPYRIGHT */
+
+.footer-bottom{
+
+    width:100%;
+
+    margin-top:60px;
+
+    padding-top:25px;
+
+    border-top:1px solid #ddd;
+
+}
+
+
+
+.footer-bottom p{
+
+    color:#555;
+
+    font-size:16px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .footer-about h1{
+
+        font-size:40px;
+
+        letter-spacing:4px;
+
+    }
+
+
+    .footer-about h3{
+
+        font-size:20px;
+
+    }
+
+
+    .footer-about p{
+
+        font-size:17px;
+
+    }
+
+
+    .footer-icons a{
+
+        width:55px;
+
+        height:55px;
+
+        font-size:25px;
+
+    }
+
+}

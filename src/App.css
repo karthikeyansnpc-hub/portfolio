@@ -1,0 +1,30 @@
+.Navz{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 50;
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+.Navz p{
+color: white;
+padding: 20px;
+}
+
+.lliisstt{
+  display: inline-block;
+  margin: 20px;
+
+}
+
+.lliisstt div{
+ 
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.lliisstt div img{
+  border-radius: 5px;
+}

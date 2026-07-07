@@ -1,0 +1,107 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins,sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+a{
+  text-decoration:none;
+  color:white;
+}
+
+button{
+  cursor:pointer;
+  border:none;
+}
+
+body{
+  background:linear-gradient(-45deg,#020617,#0f172a,#1e293b,#111827);
+  background-size:400% 400%;
+  animation:bg 12s ease infinite;
+  }
+  
+  @keyframes bg{
+  
+  0%{
+  background-position:0% 50%;
+  }
+  
+  50%{
+  background-position:100% 50%;
+  }
+  
+  100%{
+  background-position:0% 50%;
+  }
+  
+  }
+
+  .logo{
+
+    text-shadow:0 0 15px #38bdf8;
+    
+    animation:glow 2s infinite alternate;
+    
+    }
+    
+    @keyframes glow{
+    
+    from{
+    
+    text-shadow:0 0 10px #38bdf8;
+    
+    }
+    
+    to{
+    
+    text-shadow:0 0 25px #38bdf8;
+    
+    }
+    
+    }
+
+    button{
+      transition:.4s;
+      }
+      
+      button:hover{
+      transform:translateY(-5px) scale(1.05);
+      box-shadow:0 0 20px #38bdf8;
+      }
+
+      .project-card{
+
+        overflow:hidden;
+        
+        }
+        
+        .project-card img{
+        
+        transition:.5s;
+        
+        }
+        
+        .project-card:hover img{
+        
+        transform:scale(1.1);
+        
+        }
+        html{
+          scroll-behavior:smooth;
+      }
+      
+      body{
+          margin:0;
+          background:#020617;
+          overflow-x:hidden;
+      }

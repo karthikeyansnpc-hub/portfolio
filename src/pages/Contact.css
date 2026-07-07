@@ -1,0 +1,507 @@
+/* CONTACT SECTION */
+
+.contact{
+
+    min-height:100vh;
+
+    background:#050816;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:100px 20px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+/* BACKGROUND GLOW */
+
+
+.contact::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:#AA151B;
+
+    border-radius:50%;
+
+    filter:blur(130px);
+
+    top:-100px;
+
+    left:-100px;
+
+    animation:moveGlow 8s infinite alternate;
+
+}
+
+
+
+.contact::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:#F1BF00;
+
+    border-radius:50%;
+
+    filter:blur(130px);
+
+    bottom:-100px;
+
+    right:-100px;
+
+    animation:moveGlow 8s infinite alternate-reverse;
+
+}
+
+
+
+@keyframes moveGlow{
+
+
+from{
+
+transform:translate(0,0);
+
+}
+
+
+to{
+
+transform:translate(50px,50px);
+
+}
+
+
+}
+
+
+
+
+
+/* CONTACT BOX */
+
+
+.contact-box{
+
+
+    width:100%;
+
+    max-width:700px;
+
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+
+    padding:45px;
+
+
+    border-radius:30px;
+
+
+    border:1px solid rgba(255,255,255,.15);
+
+
+    box-shadow:
+
+    0 0 40px rgba(241,191,0,.3);
+
+
+    position:relative;
+
+    z-index:2;
+
+
+    animation:boxFloat 4s infinite ease-in-out;
+
+
+}
+
+
+
+@keyframes boxFloat{
+
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+
+}
+
+
+
+
+
+
+/* TITLE */
+
+
+.contact-box h1{
+
+
+    text-align:center;
+
+
+    color:#F1BF00;
+
+
+    margin-bottom:40px;
+
+
+    font-size:50px;
+
+
+    position:relative;
+
+
+}
+
+
+
+.contact-box h1::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:100px;
+
+    height:4px;
+
+
+    background:#AA151B;
+
+
+    bottom:-12px;
+
+
+    left:50%;
+
+
+    transform:translateX(-50%);
+
+
+    border-radius:20px;
+
+
+    animation:titleLine 2s infinite;
+
+
+}
+
+
+
+@keyframes titleLine{
+
+
+50%{
+
+width:220px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* FORM */
+
+
+.contact-box form{
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+
+
+/* INPUT */
+
+
+.contact-box input,
+.contact-box textarea{
+
+
+    margin-bottom:22px;
+
+
+    padding:16px;
+
+
+    border:none;
+
+
+    outline:none;
+
+
+    border-radius:15px;
+
+
+    background:#1e293b;
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    border:1px solid transparent;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.contact-box input:focus,
+.contact-box textarea:focus{
+
+
+    border:1px solid #F1BF00;
+
+
+    transform:translateY(-5px);
+
+
+    box-shadow:
+
+    0 0 20px rgba(241,191,0,.5);
+
+
+}
+
+
+
+
+
+.contact-box input::placeholder,
+.contact-box textarea::placeholder{
+
+
+    color:#cbd5e1;
+
+
+}
+
+
+
+
+
+/* BUTTON */
+
+
+.contact-box button{
+
+
+    padding:16px;
+
+
+    background:#AA151B;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    border-radius:30px;
+
+
+    cursor:pointer;
+
+
+    font-size:18px;
+
+
+    font-weight:600;
+
+
+    transition:.4s;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+.contact-box button:hover{
+
+
+    background:#F1BF00;
+
+
+    color:#050816;
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+
+    0 0 30px #F1BF00;
+
+
+}
+
+
+
+
+
+
+/* BUTTON SHINE */
+
+
+.contact-box button::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    top:0;
+
+
+    left:-120%;
+
+
+    background:
+
+    linear-gradient(
+
+    120deg,
+
+    transparent,
+
+    rgba(255,255,255,.5),
+
+    transparent
+
+    );
+
+
+    transition:.6s;
+
+
+}
+
+
+
+.contact-box button:hover::before{
+
+
+    left:120%;
+
+
+}
+
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px){
+
+
+.contact{
+
+    padding:80px 20px;
+
+}
+
+
+
+.contact-box{
+
+
+    padding:25px;
+
+
+}
+
+
+
+.contact-box h1{
+
+
+    font-size:38px;
+
+
+}
+
+
+
+.contact-box input,
+.contact-box textarea{
+
+
+    font-size:15px;
+
+
+}
+
+
+
+}
