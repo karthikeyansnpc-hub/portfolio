@@ -12,6 +12,7 @@ const projects = [
     description:
       "Modern personal portfolio built using React, CSS and Framer Motion.",
     github: "https://github.com/yourusername/portfolio",
+     live: "https://portfolio-y57r.vercel.app/",
   },
 
   {
