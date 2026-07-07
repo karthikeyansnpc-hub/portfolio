@@ -12,16 +12,15 @@ const projects = [
     description:
       "Modern personal portfolio built using React, CSS and Framer Motion.",
     github: "https://github.com/yourusername/portfolio",
-    live: "https://yourportfolio.vercel.app",
   },
 
   {
-    title: "Fake-Logo Detection",
+    title: "Billing Website",
     image: project1,
     description:
-      "Fake logo detection for logo detection",
-    github: "https://github.com/yourusername/movie-app",
-    live: "https://movie-app.vercel.app",
+      "Dress Billing For Shop",
+    github: "",
+    live: "https://ecommerce.vercel.app",
   },
 
   {
